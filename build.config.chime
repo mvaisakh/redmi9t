@@ -8,6 +8,8 @@ KERNEL_DIR=${_KERNEL_DIR}
 DEFCONFIG=vendor/chime_defconfig
 KERNEL_DIR=kernel/msm-4.19
 
+. ${KERNEL_DIR}/build.config.performance
+
 # Artifacts to be copied over for the prebuilt repo.
 FILES+="
 arch/arm64/boot/Image.gz
